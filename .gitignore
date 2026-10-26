@@ -1,0 +1,16 @@
+# data (never committed; rebuilt from the raw sources)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
