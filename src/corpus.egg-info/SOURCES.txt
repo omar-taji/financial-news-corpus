@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/corpus/__init__.py
+src/corpus/build.py
+src/corpus/dedup.py
+src/corpus/load.py
+src/corpus/normalize.py
+src/corpus.egg-info/PKG-INFO
+src/corpus.egg-info/SOURCES.txt
+src/corpus.egg-info/dependency_links.txt
+src/corpus.egg-info/top_level.txt
+tests/test_dedup.py
+tests/test_load.py
+tests/test_normalize.py

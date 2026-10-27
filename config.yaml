@@ -1,0 +1,24 @@
+# All the choices of the pipeline live here, not in the code.
+
+paths:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+
+# name we give the source: file name inside data/raw
+sources:
+  analyst_ratings: raw_analyst_ratings.csv
+  partner_headlines: raw_partner_headlines.csv
+
+# timezone assumed for dates that have no offset
+timezone: America/New_York
+
+slice:
+  tickers: [AAPL, MSFT, JPM, XOM, JNJ]
+  start: "2019-01-01"
+  end: "2020-07-01"
+
+dedup:
+  window_days: 2      # only compare headlines published at most 2 days apart
+  shingle_size: 5     # length of the character pieces used for Jaccard
+  threshold: 0.8      # similarity at or above this = same story

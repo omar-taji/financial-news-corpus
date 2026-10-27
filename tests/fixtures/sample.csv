@@ -1,0 +1,6 @@
+,headline,url,publisher,date,stock
+0,Apple beats estimates,http://a.com/1,Benzinga,2020-06-05 10:30:54-04:00,AAPL
+1,Microsoft cuts guidance,http://a.com/2,Benzinga,2020-01-15 17:05:00-05:00,MSFT
+2,JPM shares flat,http://a.com/3,Benzinga,2020-03-02 00:00:00,JPM
+3,Broken date row,http://a.com/4,Benzinga,not a date,XOM
+4,Lowercase ticker row,http://a.com/5,Benzinga,2019-11-20 09:15:00-05:00, aapl

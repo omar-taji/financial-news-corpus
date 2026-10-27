@@ -1,0 +1,57 @@
+{
+  "load": {
+    "analyst_ratings": {
+      "rows_read": 1407328,
+      "bad_dates": 0,
+      "share_without_time": 0.9602
+    },
+    "partner_headlines": {
+      "rows_read": 1845559,
+      "bad_dates": 0,
+      "share_without_time": 1.0
+    }
+  },
+  "slice": {
+    "rows": 4008,
+    "tickers": 5,
+    "start": "2019-01-01",
+    "end": "2020-07-01"
+  },
+  "clean": {
+    "rows_in": 4008,
+    "dropped_no_date": 0,
+    "dropped_no_ticker": 0,
+    "dropped_no_headline": 0,
+    "rows_out": 4008
+  },
+  "normalize": {
+    "suspect_encoding": 35
+  },
+  "exact_dedup": {
+    "exact_removed": 41,
+    "rows_out": 3967
+  },
+  "near_dedup": {
+    "near_removed": 5,
+    "rows_out": 3962
+  },
+  "dedup_settings": {
+    "window_days": 2,
+    "shingle_size": 5,
+    "threshold": 0.8
+  },
+  "final": {
+    "rows": 3962,
+    "per_ticker": {
+      "JPM": 2347,
+      "JNJ": 659,
+      "XOM": 485,
+      "AAPL": 471
+    },
+    "per_source": {
+      "partner_headlines": 2373,
+      "analyst_ratings": 1589
+    },
+    "share_with_time": 0.0093
+  }
+}
